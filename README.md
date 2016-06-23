@@ -104,6 +104,24 @@ zcat data.bin | bzcat | zcat | tar xO | tar xO | bzcat | tar xO | zcat | cat
 ```
 
 Level 13 -> 14
+>SSH key is stored in a file and had to submit it to the login to get into next level
+```sh
+ssh bandit14@localhost -i ~/sshkey.private
+```
+
+Level 14 -> 15
+
+>Password id stored in the previously specified folder and have to submit it to port 30000
+
+```ssh
+telnet localhost 30000
+```
+
+this gave the password for the next level
+
+Level 15 -> 16
+
+
 
 
 
