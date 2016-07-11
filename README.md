@@ -120,6 +120,14 @@ telnet localhost 30000
 this gave the password for the next level
 
 Level 15 -> 16
+>Password can be obtained by submitting the pasword to localhost via SSL
+
+```sh
+openssl s_client -connect localhost:30001
+```
+>After connecting to localhost it the current password needs to be ebtered and it'll give the next password.
+
+16 -> 17
 
 
 
